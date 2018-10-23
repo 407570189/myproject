@@ -11,7 +11,7 @@ public class Signup {
 	String line = scanner.nextLine();
     System.out.println("*"+line+"*");
 	boolean bool = line.equalsIgnoreCase("y");
-	
+	System.out.println(bool);
 	if (bool){
 	    System.out.print("Your age?");
 	    int number = scanner.nextInt();
