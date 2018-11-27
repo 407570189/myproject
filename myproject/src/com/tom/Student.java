@@ -25,14 +25,6 @@ public class Student {
    return math;	   
    }
    }
-   public void print(){
-   System.out.print(name+c+english+c+math+c+average()+c+highest()+c);
-   
-    if(average() < 60){
-	   System.out.println("Failed");
-   }else {
-	   System.out.println("PASS")
-   
    public char getGrading(){   
 	   char grading = 'F';
 	   int getAverage = average();
@@ -53,5 +45,16 @@ public class Student {
 		default:
 		   grading = 'F';
 	   }
-}
+	   if(average() < 60){
+		   System.out.println("Failed");
+	   }else {
+		   System.out.println("PASS");
+		   }
+   }
+   public void print(){
+   System.out.print(name+c+english+c+math+c+average()+c+highest()+c);
+   
+   
+   }
+  
    } 
